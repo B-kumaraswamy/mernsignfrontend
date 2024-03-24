@@ -67,10 +67,10 @@ function CartComponent() {
         setCart([])
      }
       
-    }, [clearCart])
+    }, [clearCart, cart, setCart, setCartList])
 
   useEffect(() => {
-    if(cartList != []) {
+    if(cartList !== []) {
         setFlag(1)
     }
   }, [cartList])
@@ -94,7 +94,7 @@ useEffect(() => {
     if(clearCart) {
         navigate('/checkout')
       }
-}, [clearCart])
+}, [clearCart, navigate])
 
    if(flag && !clearCart) {
         return (
