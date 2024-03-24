@@ -1,0 +1,32 @@
+/* cartProducts.css */
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .cart-img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .cart-titl {
+    font-size: 18px;
+    margin-bottom: 5px;
+    flex-grow: 1; /* Allow title to take up remaining space */
+  }
+  
+  .cart-quant,
+  .cart-p,
+  .cart-tot {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .cart-tot {
+    font-weight: bold;
+  }
+  
