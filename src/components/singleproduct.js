@@ -27,7 +27,7 @@ function SingleProductComponent(props) {
         ...eachProduct,
         quantity : q 
        } : eachProduct)))
-    }, [q])
+    }, [q, id, setProducts])
 
     /*
     cart = []
@@ -51,7 +51,7 @@ function SingleProductComponent(props) {
             ]))
            }
         }
-    }, [q])
+    }, [q, cart, setCart, id])
 
     useEffect(() => {
         console.log('march 04 cart items are', cart)
